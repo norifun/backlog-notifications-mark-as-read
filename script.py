@@ -23,7 +23,7 @@ while True:
         if issue["resourceAlreadyRead"] is False:
             requests.post(url=f"{url}/{issue['id']}/markAsRead", params=payload)
             print(f"既読化(id={issue['id']})")
-            time.sleep(0.5)
+            time.sleep(1)
 
         max_id = issue["id"]
 
